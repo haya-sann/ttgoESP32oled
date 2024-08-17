@@ -106,6 +106,6 @@ void loop() {
   display.drawString(0, 0, "Now the TIME"); // Draw the time string
   display.drawString(0, 40, buffer); // Draw the time string
   display.display(); // Display the updated content
-
-  delay(1000); // Wait for 1 second
+  Serial.println("Now is the time:" + String(buffer)); // Print the time to the serial monitor
+  delay(10000); // Wait for 10 second
 }
